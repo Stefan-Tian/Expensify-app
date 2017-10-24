@@ -1,6 +1,5 @@
 // yarn add react-test-renderer enzyme enzyme-to-json
 import React from "react";
-import ReactShallowRenderer from "react-test-renderer/shallow";
 import { shallow } from "enzyme";
 import Header from "../../components/Header";
 

@@ -10,11 +10,11 @@ exports[`should render ExpenseListItem with expenses 1`] = `
     </h3>
     <p>
       Amount: 
-      388
+      $3.88
     </p>
     <p>
       CreatedAt: 
-      0
+      01 1st, 1970
     </p>
     <button
       onClick={[Function]}
@@ -36,11 +36,11 @@ exports[`should render ExpenseListItem with expenses 1`] = `
     </h3>
     <p>
       Amount: 
-      199995
+      $1,999.95
     </p>
     <p>
       CreatedAt: 
-      -345600000
+      12 28th, 1969
     </p>
     <button
       onClick={[Function]}
@@ -62,11 +62,11 @@ exports[`should render ExpenseListItem with expenses 1`] = `
     </h3>
     <p>
       Amount: 
-      3000
+      $30.00
     </p>
     <p>
       CreatedAt: 
-      345600000
+      01 5th, 1970
     </p>
     <button
       onClick={[Function]}
