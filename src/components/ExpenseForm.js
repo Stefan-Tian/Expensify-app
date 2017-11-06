@@ -9,7 +9,7 @@ export default class ExpenseForm extends Component {
 
     this.state = {
       description: props.expense ? props.expense.description : "",
-      notes: props.expense ? props.expense.notes : "",
+      note: props.expense ? props.expense.note : "",
       amount: props.expense ? (props.expense.amount / 100).toString() : "",
       createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
       calendarFocused: false,
@@ -22,9 +22,9 @@ export default class ExpenseForm extends Component {
     this.setState(() => ({ description }));
   };
 
-  onNotesChange = e => {
-    const notes = e.target.value;
-    this.setState(() => ({ notes }));
+  onNoteChange = e => {
+    const note = e.target.value;
+    this.setState(() => ({ note }));
   };
 
   onAmountChange = e => {
@@ -56,7 +56,7 @@ export default class ExpenseForm extends Component {
         description: this.state.description,
         amount: parseFloat(this.state.amount, 10) * 100,
         createdAt: this.state.createdAt.valueOf(),
-        notes: this.state.notes
+        note: this.state.note
       });
     }
   };
@@ -88,9 +88,9 @@ export default class ExpenseForm extends Component {
             isOutsideRange={() => false}
           />
           <textarea
-            value={this.state.notes}
+            value={this.state.note}
             placeholder="Add a note for your expenses (optional)"
-            onChange={this.onNotesChange}
+            onChange={this.onNoteChange}
           />
           <button>Add Expense</button>
         </form>
