@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import moment from "moment";
 import numeral from "numeral";
 import selectExpenses from "../selectors/expenses";
-import { removeExpense } from "../actions/expenses";
+import { startRemoveExpense } from "../actions/expenses";
 
 export const ExpenseListItem = ({ expenses, dispatch }) => (
   <div>
@@ -15,7 +15,7 @@ export const ExpenseListItem = ({ expenses, dispatch }) => (
         <p>CreatedAt: {moment(createdAt).format("MMMM Do, YYYY")}</p>
         <button
           onClick={() => {
-            dispatch(removeExpense({ id }));
+            dispatch(startRemoveExpense({ id }));
           }}
         >
           Remove
