@@ -8,11 +8,12 @@ import { startRemoveExpense } from "../actions/expenses";
 
 export const ExpenseListItem = ({ expenses, dispatch }) => (
   <div>
-    {expenses.map(({ id, description, amount, createdAt }, index) => (
+    {expenses.map(({ id, description, amount, createdAt, note }, index) => (
       <div key={index}>
         <h3>{description}</h3>
         <p>Amount: {numeral(amount / 100).format("$0,0.00")}</p>
         <p>CreatedAt: {moment(createdAt).format("MMMM Do, YYYY")}</p>
+        {note ? <p>Note: {note}</p> : null}
         <button
           onClick={() => {
             dispatch(startRemoveExpense({ id }));
