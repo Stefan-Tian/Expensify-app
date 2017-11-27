@@ -1,83 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseListItem with expenses 1`] = `
-<div>
+<div
+  className="content-container"
+>
   <div
-    key="0"
+    className="list-header"
   >
-    <h3>
-      Gum
-    </h3>
-    <p>
-      Amount: 
-      $3.88
-    </p>
-    <p>
-      CreatedAt: 
-      January 1st, 1970
-    </p>
-    <button
-      onClick={[Function]}
+    <div
+      className="show-for-mobile"
     >
-      Remove
-    </button>
+      Expenses
+    </div>
+    <div
+      className="show-for-large-screen"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-large-screen"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
     <Link
+      className="list-item"
+      key="0"
       replace={false}
       to="/edit/1"
     >
-      Edit
+      <div>
+        <h3
+          className="list-item__title"
+        >
+          Gum
+        </h3>
+        <span
+          className="list-item__sub-title"
+        >
+          January 1st, 1970
+        </span>
+      </div>
+      <h3
+        className="list-item__amount"
+      >
+        $3.88
+      </h3>
     </Link>
-  </div>
-  <div
-    key="1"
-  >
-    <h3>
-      Rent
-    </h3>
-    <p>
-      Amount: 
-      $1,999.95
-    </p>
-    <p>
-      CreatedAt: 
-      December 28th, 1969
-    </p>
-    <button
-      onClick={[Function]}
-    >
-      Remove
-    </button>
     <Link
+      className="list-item"
+      key="1"
       replace={false}
       to="/edit/2"
     >
-      Edit
+      <div>
+        <h3
+          className="list-item__title"
+        >
+          Rent
+        </h3>
+        <span
+          className="list-item__sub-title"
+        >
+          December 28th, 1969
+        </span>
+      </div>
+      <h3
+        className="list-item__amount"
+      >
+        $1,999.95
+      </h3>
     </Link>
-  </div>
-  <div
-    key="2"
-  >
-    <h3>
-      Credit Card
-    </h3>
-    <p>
-      Amount: 
-      $30.00
-    </p>
-    <p>
-      CreatedAt: 
-      January 5th, 1970
-    </p>
-    <button
-      onClick={[Function]}
-    >
-      Remove
-    </button>
     <Link
+      className="list-item"
+      key="2"
       replace={false}
       to="/edit/3"
     >
-      Edit
+      <div>
+        <h3
+          className="list-item__title"
+        >
+          Credit Card
+        </h3>
+        <span
+          className="list-item__sub-title"
+        >
+          January 5th, 1970
+        </span>
+      </div>
+      <h3
+        className="list-item__amount"
+      >
+        $30.00
+      </h3>
     </Link>
   </div>
 </div>

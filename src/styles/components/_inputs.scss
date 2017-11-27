@@ -1,0 +1,18 @@
+.text-input {
+  border: 1px solid #cacccd;
+  height: 50px;
+  font-size: $font-size-lg;
+  font-weight: 300;
+  padding: $s-size;
+}
+// don't style input selector directly, it'll mess up the 3rd party library
+
+.select {
+  @extend .text-input;
+  background: #f0ecec;
+}
+
+.textarea {
+  @extend .text-input;
+  height: 10rem;
+}

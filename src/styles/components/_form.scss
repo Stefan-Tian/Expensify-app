@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  > * { // select all child 
+    margin-bottom: $m-size;
+  }
+}
+
+.form__error {
+  margin: 0 0 $m-size 0;
+  font-style: italic;
+  font-weight: 350;
+  color: rgb(230, 97, 97);
+}
